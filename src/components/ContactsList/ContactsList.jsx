@@ -24,7 +24,7 @@ const ContactsList = () => {
   return (
     <ul className={style.contacts__list}>
       {contactsList.length > 0 ? (
-        contacts.map(({ id, name, number }) => {
+        filterList().map(({ id, name, number }) => {
           return (
             <ContactItem
             key={id}
